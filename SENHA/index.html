@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Senhas</h2>
+        <input type="text" id="campoSenha" readonly>
+        <button id="botaoCopiar">Copiar</button>
+
+        <div class="opcoes">
+            <label for="tamanhoSenha">Tamanho: <span id="valorTamanho">12</span></label>
+            <input type="range" id="tamanhoSenha" min="6" max="20" value="12">
+            <label><input type="checkbox" id="incluirMaiusculas" checked> Letras Maiúsculas</label>
+            <label><input type="checkbox" id="incluirMinusculas" checked> Letras Minúsculas</label>
+            <label><input type="checkbox" id="incluirNumeros" checked> Números</label>
+            <label><input type="checkbox" id="incluirSimbolos"> Símbolos</label>
+            <label><input type="checkbox" id="incluirEmojis"> Incluir Emoji</label>
+        </div>
+
+        <button id="botaoGerar">Gerar Senha</button>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
